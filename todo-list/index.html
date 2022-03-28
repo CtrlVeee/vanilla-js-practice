@@ -9,12 +9,14 @@
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
         }
         body {
-            width: 100vw;
+            width: 67vw;
             height: 100vh;
+            margin: 0px;
+            padding: 0px;
         }
         input {
             margin: 0;
@@ -33,12 +35,17 @@
     
 </head>
 <body>
+    <template>
+        <p>Task written here</p>
+        <button type="button">delete</button>
+    </template>
+
     <div id="todo-container">
         <h2>Todo-list</h2>
-        <input type="text">
+        <input type="text" id="input">
         <button type="button" id="add-btn">Add</button>
 
     </div>
-    <script scr="todo-list\script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
