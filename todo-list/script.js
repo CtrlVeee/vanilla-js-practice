@@ -24,9 +24,13 @@ btn.addEventListener('click', function() {
 btn.addEventListener('click', function() {
     let task_str = input.value;
 
+    create_entry(task_str);
+})
+
+function create_entry(task_name) {
     const entry = document.createElement('div')
     const name = document.createElement('p')
-    const text = document.createTextNode(task_str)
+    const text = document.createTextNode(task_name)
     name.appendChild(text)
     const del_btn = document.createElement('button')
     const del = document.createTextNode("delete")
@@ -40,4 +44,4 @@ btn.addEventListener('click', function() {
     entry.appendChild(del_btn)
 
     todo.appendChild(entry)
-})
+}
