@@ -25,6 +25,7 @@
             width: 60vw;
             margin: 36px auto;
             text-align: center;
+            border-radius: 12px;
         }
         .flex-box {
             display: flex;
@@ -34,13 +35,14 @@
             width: 30%;
         }
         .row {
-            border: 2px solid black;
+            display:block;
+            border-bottom: 2px solid hsl(256, 97%, 76%);
         }
         .cell{
-            border-right: 1px solid black;
+            border-right: 2px solid hsl(256, 97%, 76%);
             
             padding: 12px;
-            width: 25em
+            width: 180px;
         }
         .cell:last-child {
             border: none;
@@ -80,7 +82,12 @@
                 </th>
             </tr>
             <tr class="row">
-
+                <td class="cell">dd/mm/yyyy</td>
+                <td class="cell">Food</td>
+                <td class="cell">$35</td>
+                <td class="cell">
+                    <button>Delete</button>
+                </td>
             </tr>
         </Table>
     </div>
