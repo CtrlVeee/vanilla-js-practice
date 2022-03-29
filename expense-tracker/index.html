@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing:"cell-box;
+        }
+
+        body {
+            background-color: royalblue;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 12px;
+            background-color: white;
+            width: 60vw;
+            margin: 36px auto;
+            text-align: center;
+        }
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        .input {
+            width: 30%;
+        }
+        .row {
+            border: 2px solid black;
+        }
+        .cell{
+            border-right: 1px solid black;
+            
+            padding: 12px;
+            width: 25em
+        }
+        .cell:last-child {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+
+        <div class="flex-box">
+            <div class="input date">
+                <p>Date/Time</p>
+                <input type="date">
+            </div>
+            <div class="input spend">
+                <p>Amount Spent</p>
+                <input type="number">
+            </div>
+            <div class="input">
+                <p>Purchase</p>
+                <input type="text">
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Expenses Tracked</h2>
+        <Table>
+            <tr class="row">
+                <th class="cell">Date</th>
+                <th class="cell">Purchase</th>
+                <th class="cell">Amount</th>
+                <th class="cell">
+                    <p></p>
+                </th>
+            </tr>
+            <tr class="row">
+
+            </tr>
+        </Table>
+    </div>
+</body>
+</html>
