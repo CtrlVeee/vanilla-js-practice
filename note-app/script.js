@@ -4,12 +4,16 @@ const temp = document.querySelector("template")
 const notes = document.querySelector('.note-list')
 
 btn.addEventListener('click', () => {
-    let div= document.createElement('div')
-    div.setAttribute("class", "note-item")
+    if (txt.value != '') {
+        let div= document.createElement('div')
+        div.setAttribute("class", "note-item")
+        div.appendChild(temp.content.cloneNode(true))
+        div.children[1].textContent = txt.value
+        div.children[0].addEventListener('click', function() {
+            div.remove()
+        })
 
-    div.appendChild(temp.content.cloneNode(true))
-    
-    notes.appendChild(div)
-    console.log(notes)
+        notes.appendChild(div)
+    }
     
 })
