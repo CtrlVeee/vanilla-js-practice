@@ -28,6 +28,6 @@ window.addEventListener("load", ()=>{
     
 })
 
-function loadMusic(index) {
-
+function loadMusic(index, elem) {
+    elem.textContent = tracklist[index]["name"]
 }
