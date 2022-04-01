@@ -49,14 +49,21 @@
             justify-content: center;
             top: 0;
             margin-top: 4%;
+            flex-wrap: wrap;
+            
         }
         .note-item{
             display: block;
             flex-grow: 0.30;
             height: 120px;
-            max-width: 65%;
+            min-width: 120px;
+            max-width: 24%;
             border: 2px solid black;
-            overflow: hidden;
+            overflow-y: scroll;
+            word-wrap: break-word;
+            margin: 0 9px;
+            margin-bottom: 9px;
+            
         }
         .note-item button{
             position: relative;
