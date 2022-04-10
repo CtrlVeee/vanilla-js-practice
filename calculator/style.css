@@ -1,3 +1,8 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
 .container {
     max-width: 400px;
     margin: 10vh auto 0 auto;
@@ -14,20 +19,31 @@
 
 .buttons {
     display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .buttons > div {
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .button {
-    border: 0.5px solid #999;
+    border: 0.5px solid white;
     line-height: 60px;
     text-align: center;
     font-size: 25px;
     cursor:pointer;
+
+    background-color: blueviolet;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#equal {
+    background-color: rgb(255, 251, 41);
+    color:black;
+}
+
+.button:hover {
+    background-color: rgb(187, 113, 255);
 }
