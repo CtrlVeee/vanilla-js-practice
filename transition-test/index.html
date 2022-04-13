@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::after, *::before{
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh;
+            transition: 0.3s ease-in;
+
+        }
+        .red {
+            background-color: tomato;
+        }
+        .blue {
+            background-color: turquoise;
+        }
+        .container {
+            background-color: white;
+            padding: 6px;
+            width: 20vw;
+            height: 32vh;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        button {
+            padding: 6px;
+            width: 50%;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        h2, p, div {
+            transition: 0.3s ease-in;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body class="blue">
+    <div class="container">
+        <h2>Model Buses</h2>
+        <p>You're just scared of the future</p>
+        <button type="button"
+        onclick="sweesh()">Grovel</button>
+    </div>
+</body>
+</html>
