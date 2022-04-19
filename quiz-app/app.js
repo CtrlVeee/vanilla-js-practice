@@ -48,7 +48,7 @@ function startApp() {
 }
 
 function nextItem() {
-    console.log("this switches to the next question")
+    console.log(children)
 }
 
 children = [...ops.children]
@@ -58,8 +58,8 @@ children.forEach(child => {
             elem.classList.remove('selected')
         })
         e.target.classList.add('selected')
-        if (next.classList.contains('hide')) {
-            next.classList.remove('hide')
+        if (enter.classList.contains('hide')) {
+            enter.classList.remove('hide')
         }
     }
 )})
