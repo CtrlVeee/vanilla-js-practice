@@ -78,3 +78,18 @@ li {
     font-weight: bolder;
 
 }
+
+.selected {
+    background-color: white;
+    color: hsl(227, 49%, 65%);
+}
+
+.wrong {
+    background-color: orangered;
+    color: white;
+}
+
+.correct {
+    background-color: palegreen;
+    color: black;
+}
