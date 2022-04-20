@@ -1,29 +1,29 @@
 const data = [
     {
-        header: "Question 1",
+        header: "Who killed Markiplier?",
         options: [
-            ['option 1', true],
-            ['option 2', false],
-            ['option 3', false],
-            ['option 4', false]
+            ['Your Mom', true],
+            ['Chika', false],
+            ['Warfstache', false],
+            ['Im a dog', false]
         ]
     },
     {
-        header: "Question 2",
+        header: "What is the capital of england",
         options: [
-            ['option 5', false],
-            ['option 6', false],
-            ['option 7', true],
-            ['option 8', false]
+            ['Deez Nuts', false],
+            ['Tommyinnit', false],
+            ['London', true],
+            ['Valhalla', false]
         ]
     },
     {
-        header: "Question 3",
+        header: "What is your gender",
         options: [
-            ['option 9', false],
-            ['option 10', true],
-            ['option 11', false],
-            ['option 12', false]
+            ['Boy', false],
+            ['Godlike', true],
+            ['Girl', false],
+            ['Tablecloth', false]
         ]
     }
 ]
@@ -82,6 +82,7 @@ res.addEventListener("click", e => {
 function startApp() {
     ops.classList.remove('hide')
     start.classList.add('hide')
+    clearSelect()
 
     loadItem(currentItem)
 }
